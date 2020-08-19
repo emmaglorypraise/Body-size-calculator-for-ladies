@@ -14,7 +14,7 @@
     <div class="row ">
       <div class="col-md-6">
         <div class="image-box">
-          <img class=" " src="images/woman-icon.jpg" alt="picture of woman with measuring tape">
+          <!-- <img class="img-fluid" src="images/woman-icon.jpg" alt="picture of woman with measuring tape"> -->
         </div>
       </div>
       <div class="col-md-6">
@@ -22,6 +22,7 @@
           <h2>Don't know whether you are a size 10, 12, 14, 100 etc?</h2>
           <h3>Worry No More!</h3>
           <h4>Fill in your measurement and get to know your size!</h2>
+        </div>
         
         <div class="form d-flex justify-content-center align-content-center">
           <form action="" >
@@ -29,19 +30,24 @@
             <input type="text" name="" id="bust" placeholder="Bust" required>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="waist" placeholder="waist" required>
+            <input type="text" name="" id="waist" placeholder="Waist" required>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="hips" placeholder="hips" required>
+            <input type="text" name="" id="hips" placeholder="Hips" required>
           </div>
           <button type="button" onclick="whenClicked();">Check size</button>
           <div>
-            <p>Your size is: </p>
+            <p>Your size is: <span id="sizeOutput">?</span> </p>
           </div>
           </form>
           
         </div>
-      </div>
+
+        <div>
+          <p>To find the correct size, first take your bust, hip and waist measurements, in inches  </p>
+          <p>Please observe that these size charts are only guides to helping you find the right women’s sizes. Sizes may differ notably between different clothing manufacturers and brands.</p>
+        </div>
+      
       </div>
      
     </div>
