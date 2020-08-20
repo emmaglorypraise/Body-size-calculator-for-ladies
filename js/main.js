@@ -42,7 +42,10 @@ var sizeOutput = document.getElementById('sizeOutput').innerText;
   }  else if (bust = 45 && waist <= 36.5 && hips <= 47) {
     sizeOutputValue = 20;
     document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
-  } 
+  } else {
+    sizeOutputValue = "Unknown...try again";
+    document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
+  }
 
   console.log(bust, waist, hips);
 }
