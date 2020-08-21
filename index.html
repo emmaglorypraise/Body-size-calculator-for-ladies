@@ -6,6 +6,8 @@
   <title>Size Calculator - For Women</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -25,29 +27,28 @@
         </div>
         
         <div class="form d-flex justify-content-center align-content-center">
-          <form action="" >
+          <form class="">
           <div class="form-group">
-            <input type="text" name="" id="bust" placeholder="Bust" required>
+            <input type="text" name="" id="bust" placeholder="Bust" type="number"  required/>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="waist" placeholder="Waist" required>
+            <input type="text" name="" id="waist" placeholder="Waist" type="number" required/>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="hips" placeholder="Hips" required>
+            <input type="text" name="" id="hips" placeholder="Hips" type="number"  required/>
           </div>
-          <button type="button" onclick="whenClicked();">Check size</button>
-          
-          <div>
+          <div class="button-container">
+          <button type="submit" onclick="whenClicked();">Check size</button>
+          </div>
+          <div class="result">
             <p>Yay!....You are a size <span id="sizeOutput">?</span> </p>
           </div>
           </form>
-          
         </div>
 
-        <div class="text-box">
-        
-          <p>Please observe that these size charts are only guides to helping you find the right women’s sizes. Sizes may differ notably between different clothing manufacturers and brands.</p>
-        </div>
+        <div class="text-box-two">
+          <p>Please note that this is just a guide to help you find your size for your tops, blouses and gowns. </p>
+        </div> <br>
       
       </div>
      

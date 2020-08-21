@@ -6,10 +6,13 @@ var waist = document.getElementById('waist').value;
 var hips = document.getElementById('hips').value;
 var sizeOutput = document.getElementById('sizeOutput').innerText;
 
-  if (bust <= 31 && waist <= 23 && hips <= 34) {
+  if (bust >= 100 && waist >= 100 && hips >= 100) {
+    sizeOutputValue = "Oops...please confirm your size again";
+    document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
+  } else if (bust <= 31 && waist <= 23 && hips <= 34) {
     sizeOutputValue = 00;
     document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
-  } else if (bust <= 32 && waist <= 24 && hips <= 35) {
+  }else if (bust <= 32 && waist <= 24 && hips <= 35) {
     sizeOutputValue = 0;
     document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
   }else if (bust <= 33 && waist <= 25 && hips <= 36) {
@@ -43,7 +46,7 @@ var sizeOutput = document.getElementById('sizeOutput').innerText;
     sizeOutputValue = 20;
     document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
   } else {
-    sizeOutputValue = "Unknown...try again";
+    sizeOutputValue = "Unknown...Refresh and try again";
     document.getElementById('sizeOutput').innerHTML = sizeOutputValue;
   }
 
