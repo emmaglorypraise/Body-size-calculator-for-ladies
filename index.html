@@ -26,26 +26,26 @@
           <p>To find the correct size, first take your bust, hip and waist measurements, in inches  </p>
         </div>
         
-        <div class="form d-flex justify-content-center align-content-center">
-          <form class="">
+        <div class="form d-flex justify-content-center align-content-center" name="myForm">
+          <form>
           <div class="form-group">
-            <input type="text" name="" id="bust" placeholder="Bust" type="number"  required/>
+            <input type="text" name="bust" id="bust" placeholder="Bust" type="number"  required/><span id="errorMessage"></span>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="waist" placeholder="Waist" type="number" required/>
+            <input type="text" name="waist" id="waist" placeholder="Waist" type="number" required/><span id="errorMessage"></span>
           </div>
           <div class="form-group">
-            <input type="text" name="" id="hips" placeholder="Hips" type="number"  required/>
+            <input type="text" name="hips" id="hips" placeholder="Hips" type="number"  required/><span id="errorMessage"></span>
           </div>
           <div class="button-container">
-          <button type="submit" onclick="whenClicked();">Check size</button>
+          <button id="submit" type="submit" name="submit" >Check size</button>
           </div>
           <div class="result">
             <p>Yay!....You are a size <span id="sizeOutput">?</span> </p>
           </div>
           </form>
         </div>
-
+        <!-- whenClicked();  validate(); -->
         <div class="text-box-two">
           <p>Please note that this is just a guide to help you find your size for your tops, blouses and gowns. </p>
         </div> <br>
